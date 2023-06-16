@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@*@Html.Partial("GuidPartial")
+<h2>**************************</h2>*@
+<div>
+    <h1>
+        Controller Operations
+    </h1>
+
+    <h2> OperationTransient: @ViewBag.OperationTransient.OperationId</h2>
+
+    <h2> OperationScoped: @ViewBag.OperationScoped.OperationId</h2>
+
+    <h2> OperationSingleton: @ViewBag.OperationSingleton.OperationId</h2>
+
+    <h2> OperationInstance: @ViewBag.OperationInstance.OperationId</h2>
+</div>
+<div>
+
+    <h1> Services Operations </h1>
+
+    <h2> OperationTransient: @ViewBag._operationServices.OperationTransient.OperationId</h2>
+
+    <h2> OperationScoped: @ViewBag._operationServices.OperationScoped.OperationId</h2>
+
+    <h2> OperationSingleton: @ViewBag._operationServices.OperationSingleton.OperationId</h2>
+
+    <h2> OperationInstance: @ViewBag._operationServices.OperationInstance.OperationId</h2>
+</div>

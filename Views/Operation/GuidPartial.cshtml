@@ -1,0 +1,15 @@
+﻿﻿@*引入命名空间*@ 
+@using ASP.NET_Core依赖注入_DI_讲解.Service 
+@*通过该inject引入*@ 
+@inject IOperationTransient OperationTransient  
+@inject IOperationScoped OperationScoped 
+@inject IOperationSingleton OperationSingleton
+
+<div class="row">
+    <div>
+        <h2>GuidItem Shows</h2>
+        <h3>TransientGuid: @OperationTransient.OperationId</h3>
+        <h3>ScopedGuid: @OperationScoped.OperationId</h3>
+        <h3>SingletonGuid: @OperationSingleton.OperationId</h3>
+    </div>
+</div>
