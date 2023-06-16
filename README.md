@@ -1,0 +1,1 @@
+# ASP.NET-Core-DI-Transient-Scoped-Singleton-
